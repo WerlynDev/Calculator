@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(197, 197, 197);
+}
+button,.previous-operand, .curret-operand{
+    cursor:pointer;
+    margin:1.5px;
+    font-size:25px;
+}
+
+div.conteiner-calculeitor {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+  
+}
+
+div.tela-container {
+    grid-column: 1 / -1;
+
+}
+
+div.tela-container > .output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+
+button.operator {
+    color:ghostwhite;
+    background-color:#32526E;
+}
+
+div>.span-two {
+    grid-column: span 2;
+}
+
+div > .previous-operand, .curret-operand {
+    margin:0 5px 0 5px;
+    cursor: unset;
+    color:ghostwhite;
+}
+
+div > .tela-container {
+    background-color:#32526E;
+
+}
